@@ -28,10 +28,11 @@
   <header>
     <div class="landing">
       <img src="imgs/logo_hero.svg" alt="logo_hero" id='logo_hero'>
-      <img src="imgs/responsive_img.svg" alt="responsive-design" id='responsive_img'>
-      <h1>Rob Caluza</h1>
-      <p>Front End Developer</p>
-      <a href="#projects" class='btn-lg'>View Projects</a>
+      <div class="header_content">
+        <h1>Rob Caluza</h1>
+        <p>Front End Developer</p>
+        <a href="#projects" class='btn-lg'>View Projects</a>
+      </div>
     </div>
   </header>
   <div class="about" id='about'>
@@ -95,10 +96,10 @@
     <img src="imgs/airplane.svg" alt="paperplane" id='airplane'>
     <div class="card">
       <form action="http://mailthis.to/s31181" method="post">
-        <input type="text" name="_valid[name]" value="Name">
-        <input type="email" name="_valid[email]" value="E-Mail">
-        <input type="message" name="_valid[message]" value="Message">
-        <input type="submit" value="Send">
+        <input type="text" name="_valid[name]" placeholder="Name">
+        <input type="email" name="_valid[email]" placeholder="E-Mail">
+        <input type="message" name="_valid[message]" placeholder="Message">
+        <input class='btn-lg' type="submit" value="Send">
       </form>
       <a href=''><i class='fa fa-linkedin'></i></a>
     </div>
