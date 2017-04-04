@@ -22,8 +22,6 @@ $(document).ready(function() {
    console.log($target);
    $('body, html').animate({
      'scrollTop': $target.offset().top
-   }, 1000, 'swing', function () {
-     window.location.hash = target;
-   });
+   }, 300, 'linear');
    });
 });
