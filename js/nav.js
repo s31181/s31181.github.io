@@ -1,20 +1,22 @@
 $(document).ready(function() {
+  //click on the hamburger icon slides out the nav
   $('.burger-container').click(function() {
     $('.burger').toggleClass('open');
     $('.nav').toggleClass('slide_out');
-    console.log('click');
   });
 
-  $(window).click(function() {
+  //if you click off of the menu it closes
+  $(window).on('click touchstart', function() {
     $('.burger').removeClass('open');
     $('.nav').removeClass('slide_out');
-    console.log('i took a shit');
-  });
-  $('.burger-container').click(function(event) {
-    event.stopPropagation();
-    console.log('holy crap');
   });
 
+  // click on the hamburger icon menu closes
+  $('.burger-container').on('click touchstart', function(event) {
+    event.stopPropagation();
+  });
+
+  //click on one of the links in the menu it smoothly scrolls to that section of the page
   $('a[href^="#"]').on('click', function(event) {
    event.preventDefault();
    var target = this.hash;
