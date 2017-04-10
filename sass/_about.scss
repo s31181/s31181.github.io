@@ -1,0 +1,178 @@
+.about {
+  margin-bottom: 10%;
+  margin-top: 20%;
+  text-align: center;
+  img {
+    background-color: #fafafa;
+    width: 60vw;
+  }
+
+  h1 {
+    background-color: #fafafa;
+    box-shadow: -15px 0px 10px -15px #000000, 15px 0px 10px -15px #000000;
+    font-size: 45px;
+    margin: 0 15vh;
+    margin-top: -25vw;
+    padding: 2% 0;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .card {
+    background-color: #fafafa;
+    border: double 6px #000000;
+    box-shadow: -10px 0px 10px -9px #000000, 10px 0px 10px -9px #000000;
+    color: #010101;
+    font-size: 16px;
+    line-height: 2em;
+    margin: 10% 5%;
+    margin-top: -14vh;
+    margin-bottom: 30%;
+    padding: 20% 7%;
+    text-align: justify;
+    transition: all .6s ease-in-out;
+    h2 {
+      text-align: center;
+    }
+    p {
+      padding-left: 5%;
+    }
+    h2:first-child {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+}
+//tablets
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    margin-top: 20%;
+    text-align: center;
+    img {
+      background-color: #fafafa;
+      width: 50vw;
+    }
+
+    h1 {
+      background-color: #fafafa;
+      box-shadow: -15px 0px 10px -15px #000000, 15px 0px 10px -15px #000000;
+      font-size: 45px;
+      margin: 0 30vw;
+      margin-bottom: 5vh;
+      margin-top: -23vw;
+      padding: 2% 0;
+      text-align: center;
+    }
+
+    #backpack {
+      margin-bottom: -28vw;
+      width: 50vw;
+    }
+
+    #profile {
+      display: none;
+    }
+
+    .card {
+      background-color: #fafafa;
+      border: double 6px #000000;
+      box-shadow: -10px 0px 10px -9px #000000, 10px 0px 10px -9px #000000;
+      color: #010101;
+      font-size: 16px;
+      line-height: 2em;
+      margin: 10% 15%;
+      margin-top: -20vw;
+      padding: 20% 7%;
+      padding-bottom: 10%;
+      transition: all .6s ease-in-out;
+      text-align: justify;
+      p {
+        padding-left: 5%;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      h2:first-child {
+        font-size: 20px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+//laptops & Desktops
+@media only screen and (min-width: 1024px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    margin-top: 0;
+    text-align: center;
+    .about_content {
+      margin: 10% auto;
+      width: 80vw;
+      max-width: 920px;
+      display: flex;
+      align-items: center;
+      jusify-content: center;
+      flex-direction: row;
+      margin-bottom: 10%;
+      border-top: double 6px #606060;
+      border-bottom: double 6px #606060;
+      transition: all .6s ease-in-out;
+    }
+
+    //this is the image with the laptop, tablet and phone
+    #responsive {
+      padding: 5% 0;
+      width: 50vw;
+      width: 50%;
+    }
+
+    h1 {
+      margin: 0 30vw;
+      margin-top: -5vh;
+      background-color: #fafafa;
+      box-shadow: -15px 0px 10px -15px #000000, 15px 0px 10px -15px #000000;
+      padding: 2% 0;
+      text-align: center;
+      font-size: 45px;
+    }
+
+    .card {
+      color: #010101;
+      font-size: 16px;
+      border: none;
+      box-shadow: 0 0 0;
+      line-height: 2em;
+      margin: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: #fafafa;
+      text-align: justify;
+      padding: 5% 5%;
+      padding-top: 10%;
+      max-width: 920px;
+      h2 {
+        padding-left: 5%;
+        font-size: 2em;
+        color: #555555;
+      }
+
+      h2:first-child {
+        color: #000000;
+        padding-left: 0;
+        text-align: left;
+        font-size: 2.5em;
+        padding-bottom: 5%;
+      }
+
+      p {
+        color: #555555;
+        padding-left: 5%;
+      }
+    }
+  }
+}

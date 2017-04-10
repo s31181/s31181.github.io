@@ -86,18 +86,8 @@ typings/
 # dotenv environment variables file
 .env
 
-# sass files
-sass
-*.scss
-
 # babelrc
 .babelrc
 
 # json
 package.json
-
-# gulp file
-gulpfile.js
-
-#custom js file
-custom.js
