@@ -58,18 +58,15 @@
   }
 
   .btn-lg {
-    background-color: rgba( 0, 0, 0, 0);
     font-size: 1.5em;
     cursor: pointer;
-    padding: 3% 6%;
+    padding: 5% 10% 15% 10%;
     text-decoration: none;
     color: #fafafa;
-    border: solid 4px #E31C0A;
-    border-radius: 3px;
-    max-width: 250px;
+    background: #0a98e3;
+    border: none;
+    border-radius: 10px;
     transition: all .2s linear;
-    width: 30vw;
-    height: 8vh;
   }
 
   .btn-lg:hover {
@@ -178,7 +175,7 @@
 @media only screen and (min-device-width: 1024px) {
   .contact {
     margin-top: 0;
-    background: linear-gradient(rgba(95, 121, 182, 1),rgba(95, 121, 182,  1),rgba(95, 121, 182,  1), rgba(95, 121, 182,  .1),rgba(95, 121, 182,  .1), rgba( 95, 121, 182, 0)), url('../imgs/contact_back2.JPG');
+    background: url('../imgs/contact_back2.JPG');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -190,7 +187,7 @@
       color: #fafafa;
       margin: 0 30vw;
       margin-top: -13vh;
-      background-color: rgb(95, 121, 182);
+      background: linear-gradient(rgba(95, 121, 182, 1), rgba(95, 121, 182, 1), rgba(0, 0 , 0, 0));
       box-shadow: -10px 0px 10px -12px #000, 10px 0px 10px -12px #000;
       padding: 2% 0;
       text-align: center;
@@ -199,18 +196,19 @@
     }
 
     #airplane {
-      background-color: rgb(95, 121, 182);
+      margin-top: 9vw;
+      background: transparent;
       padding: 0 7vw;
-      width: 25vw;
+      width: 15vw;
     }
 
     .card {
       color: #fafafa;
       font-size: 16px;
-      border: double 10px #fafafa;
+      border: none;
       line-height: 1.2em;
       margin: 10% 25%;
-      margin-top: -11vw;
+      margin-top: -7vw;
       margin-bottom: 2vh;
       background-color: rgba( 0, 0, 0, 0);
       text-align: center;
@@ -218,14 +216,29 @@
       padding-bottom: 5%;
     }
 
+    textarea::-webkit-input-placeholder {
+      color: #fafafa;
+    }
+
     textarea {
+      border: double 7px #fafafa;
+      background: transparent;
+      border-bottom: double 7px #fafafa;
       font-size: 16px;
       margin: 3% auto;
       height: 20vh;
-      width: 100%;
+      width: 96%;
+    }
+
+    input::-webkit-input-placeholder, {
+      color: #fafafa;
     }
 
     input {
+      color: white;
+      background: transparent;
+      border:none;
+      border-bottom: double 7px #fafafa;
       font-size: 16px;
       margin: 3% auto;
       height: 5vh;
@@ -233,13 +246,14 @@
     }
 
     .btn-lg {
-      background-color: rgba( 0, 0, 0, 0);
+      background-color: #3194ca;
+      background: linear-gradient(#0a98e3, #02478c);
       font-size: 1.5em;
       cursor: pointer;
       padding: 0 5.5%;
       text-decoration: none;
       color: #fafafa;
-      border: solid 4px #E31C0A;
+      border: none;
       border-radius: 3px;
       max-width: 250px;
       transition: all .2s linear;
