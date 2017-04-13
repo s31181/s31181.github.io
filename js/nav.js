@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('body').hide().fadeIn(2000);
+  $('.landing').hide().delay(1500).fadeIn(4000);
   //click on the hamburger icon slides out the nav
   $('.burger-container').click(function() {
     $('.burger').toggleClass('open');
