@@ -116,17 +116,18 @@ header {
     .btn-lg {
       font-size: 1.5em;
       cursor: pointer;
-      padding: 5% 10.5%;
       text-decoration: none;
+      padding-top: 3vh;
       color: #fafafa;
       background: linear-gradient(#0a98e3, #02478c);
       border: none 3px #02478c;
       border-radius: 5px;
-      transition: all .6s ease-in-out;
+      transition: all .3s ease-in-out;
+      width: 13vw;
+      height: 6vh;
     }
     .btn-lg:hover {
       font-size: 1.8em;
-      padding: 5% 10.5%;
     }
 
   }
